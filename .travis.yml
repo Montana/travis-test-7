@@ -38,8 +38,7 @@ script:
 - chmod u+x scripts/travis-env.sh  
 - mkdir build 
 - cd build 
-- chmod u+x scripts/autogen.sh 
-- --enable-werror && make && make check
+- chmod u+x scripts/autogen.sh --enable-werror && make && make check
 
 jobs:
   include:
