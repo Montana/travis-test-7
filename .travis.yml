@@ -39,6 +39,8 @@ script:
 - mkdir build 
 - cd build 
 - chmod u+x scripts/autogen.sh
+- make
+- make check
 
 jobs:
   include:
