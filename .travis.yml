@@ -35,10 +35,11 @@ addons:
     - gnutls
     
 script:
-- chmod u+x scripts/travis-env.sh
+- chmod u+x scripts/travis-env.sh && scripts/autogen.sh --enable-werror
 - mkdir build 
 - cd build 
-- chmod u+x scripts/autogen.sh
+- make
+- make check
 
 jobs:
   include:
