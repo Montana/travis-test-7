@@ -36,10 +36,6 @@ addons:
     
 script:
 - chmod u+x scripts/travis-env.sh
-- mkdir build 
-- cd build 
-- make
-- make check
 
 jobs:
   include:
