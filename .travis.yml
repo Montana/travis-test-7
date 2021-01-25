@@ -35,9 +35,10 @@ addons:
     - gnutls
     
 script:
-- chmod u+x scripts/travis-env.sh && autogen.sh
+- chmod u+x scripts/travis-env.sh
 - mkdir build 
 - cd build 
+- chmod u+x scripts/autogen.sh
 
 jobs:
   include:
@@ -53,4 +54,3 @@ jobs:
   - name: "ppc64le"
     os: linux
     arch: ppc64le
-autogen.sh
